@@ -8,7 +8,8 @@ def run(name, fn):
     try:
         result[name] = {"ok": True, "info": fn()}
     except Exception as e:
-        result[name] = {"ok": False, "error": f"{type(e).__name__}: {str(e)[:200]}"}
+            msg = str(e).replace(os.environ.get("DART_API_KEY", "") or "\0", "***")
+           result[name] = {"ok": False, "error": f"{type(e).__name__}: {msg[:200]}"}
     print(name, result[name])
 
 # 1) 한국거래소 (pykrx): 전 종목 시총 + 삼성전자 투자자별 수급
