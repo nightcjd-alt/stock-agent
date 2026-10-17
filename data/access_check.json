@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-17T00:53:15.085664Z",
+  "krx": {
+    "ok": false,
+    "error": "IndexError: index -1 is out of bounds for axis 0 with size 0"
+  },
+  "dart": {
+    "ok": false,
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='opendart.fss.or.kr', port=443): Max retries exceeded with url: /api/corpCode.xml?crtfc_key=569265095b9e3745257c94f6ed5156c15a34cb4d (Caused by ConnectTimeoutError(<HTTPSConne"
+  },
+  "naver": {
+    "ok": true,
+    "info": {
+      "status": 200,
+      "bytes": 132179
+    }
+  },
+  "yahoo": {
+    "ok": true,
+    "info": {
+      "rows": 19
+    }
+  }
+}
